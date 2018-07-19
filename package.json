@@ -5,7 +5,7 @@
   "main": "./dist/react-summernote.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vnkitaev/react-summernote.git"
+    "url": "git+https://github.com/forallsystems/react-summernote.git"
   },
   "scripts": {
     "build": "webpack",
@@ -23,16 +23,12 @@
     "src",
     "lang"
   ],
-  "author": {
-    "name": "Ivan Kitaev",
-    "email": "vnkitayev@gmail.com"
-  },
+  "author": "Ivan Kitaev <vnkitayev@gmail.com>",
   "license": "MIT",
-  "readmeFilename": "README.md",
   "dependencies": {
     "codemirror": "^5.26.0",
     "prop-types": "^15.5.10",
-    "summernote": "^0.8.3"
+    "summernote": "^0.8.10"
   },
   "peerDependencies": {
     "bootstrap": "^3.3.6",
@@ -58,5 +54,9 @@
     "style-loader": "^0.18.1",
     "url-loader": "0.5.8",
     "webpack": "^2.6.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/forallsystems/react-summernote/issues"
+  },
+  "homepage": "https://github.com/forallsystems/react-summernote#readme"
 }
