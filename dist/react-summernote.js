@@ -13909,7 +13909,7 @@ var Editor = /** @class */ (function () {
             }
             else {
                 // if url doesn't match an URL schema, set http:// as default
-                if (!disableAutoUrlPrefix)
+                if (!this.options.disableAutoUrlPrefix)
                   linkUrl = /^[A-Za-z][A-Za-z0-9+-.]*\:[\/\/]?/.test(linkUrl)
                     ? linkUrl : 'http://' + linkUrl;
             }
