@@ -13909,7 +13909,8 @@ var Editor = /** @class */ (function () {
             }
             else {
                 // if url doesn't match an URL schema, set http:// as default
-                linkUrl = /^[A-Za-z][A-Za-z0-9+-.]*\:[\/\/]?/.test(linkUrl)
+                if (!disableAutoUrlPrefix)
+                  linkUrl = /^[A-Za-z][A-Za-z0-9+-.]*\:[\/\/]?/.test(linkUrl)
                     ? linkUrl : 'http://' + linkUrl;
             }
             var anchors = [];
@@ -17186,6 +17187,7 @@ $$1.summernote = $$1.extend($$1.summernote, {
         linkTargetBlank: true,
         focus: false,
         tabSize: 4,
+        disableAutoUrlPrefix: false,
         styleWithSpan: true,
         shortcuts: true,
         textareaAutoSync: true,
