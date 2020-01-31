@@ -28,7 +28,7 @@
   "dependencies": {
     "codemirror": "^5.26.0",
     "prop-types": "^15.5.10",
-    "summernote": "^0.8.10"
+    "summernote": "sharingcloud/summernote#master"
   },
   "peerDependencies": {
     "bootstrap": "^3.3.6",
